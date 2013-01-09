@@ -9,7 +9,7 @@ http://git-scm.com/downloads
 
 
 Create a new Project
-===================
+--------------------
 
 Initialise the current directory as a git directory
 ```bash
