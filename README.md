@@ -38,9 +38,9 @@ git push origin master
 ```
 
 
-git pull
-git branch New_Branch_Name
-git checkout Branch_Name
-git branch
- - List of branches with * next to current
-git merge dev
+To Explain
+- git pull
+- git branch New_Branch_Name
+- git checkout Branch_Name
+- git branch: List of branches with * next to current
+- git merge dev
