@@ -30,6 +30,8 @@ The way in which you should manage your work with git, is that you complete some
 
 Then commit that change with a useful comment, so that you and everyone else can see what happened with that commit.
 
+Making a commit
+---------------
 
 The way to make a commit is as follows:
 ```bash
@@ -38,7 +40,9 @@ git commit -m 'Updated this README.md with git command instructions'
 ```
 - At this point, you've committed all the changes since your last commit to your local git repository; you've segmented that piece of work (feature or whatever it is).
 
-Pushing a commit(s) to your remote repository
+Pushing commits to a remote repository
+--------------------------------------
+
 ```bash
 git push origin master
 ```
