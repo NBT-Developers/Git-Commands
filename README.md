@@ -1,6 +1,12 @@
 Git-Commands for Colleages
 ==========================
 
+Installing git
+```bash
+http://git-scm.com/downloads
+```
+- Download and follow the instructions (recommended).
+
 
 Create a new Project
 ===================
