@@ -97,5 +97,3 @@ git branch
 - The two '>' are the returned information
 - * next to master, indicates you're on the master branch
 - NB. Your git command-line also tells you which branch you're in.
-
-```
