@@ -74,8 +74,8 @@ When you've created a new branch you can switch to it by using checkout
 git checkout dev
 ```
 - Checkout (or switch) to the 'dev' branch
-- Any chances you make are now made against this branch, leaving your master as it was.
-- This means that if you want to work on a new feature, you're master still works, and can be deployed - you effectively still have a working version.
+- Any changes you make are now made against this branch, leaving your master as it was.
+- This means that if you want to work on a new feature, your master still works, and can be deployed - you effectively still have a working version.
 
 Once you've finished working on your branch, it works perfectly, committed all the changes and you want to put this back into your master branch, you do this...
 
