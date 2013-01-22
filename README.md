@@ -97,3 +97,57 @@ git branch
 - The two '>' are the returned information
 - * next to master, indicates you're on the master branch
 - NB. Your git command-line also tells you which branch you're in.
+
+'Git Reset' - Is your friend
+----------------------------
+
+Git reset, allows you to reset your current working directory, either to the current working commit (most recent push to the gitserver), or to a particular commit
+
+To completely reset your current working directory to the current gitserver head (last commit)
+```bash
+git reset --hard HEAD
+```
+
+To reset your local commits to a particular commit point, and revert any changes since to 'uncommitted'
+```bash
+git reset --soft z6c829075ccf6ae98fd4668f229c7d1c7e1a5254
+```
+- 'z6c829075ccf6ae98fd4668f229c7d1c7e1a5254' is the unique reference for that commit.
+
+So as an example...
+- I have a repo, the last commit ref was 12345.
+- I make some changes, commit and push to github; with a commit ref of 23456
+- But yikes, I did something wrong; and I want to revert; but don't want to completely destroy my changes.
+- I would then do...
+
+```bash
+git reset --soft 12345
+```
+
+My working local commit would now be reset to 12345, but I would still have the changes I'd made.
+
+- This is also useful when you want to bundle small commits - you've done as you've gone along into a single commit.
+Example commit history (desc)...
+
+```bash
+Started notifications 12345
+Added notifications settings 23456
+Discovered bug with admin users; and started fixing. 34567
+Fixed bug with admin users. 45678
+Added additional notification for xyz. 56789
+```
+
+This is potentially a lot of commit history, that you may not want in a big project.
+So...
+
+```bash
+git reset --soft 12345
+git add .
+git commit -m 'Notifications added'
+git push upstream master
+```
+
+Now you have a commit history of:
+```bash
+Notifications added 67890
+```
