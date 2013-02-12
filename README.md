@@ -151,3 +151,8 @@ Now you have a commit history of:
 ```bash
 Notifications added 67890
 ```
+
+
+Git Tags
+--------
+See: http://git-scm.com/book/en/Git-Basics-Tagging
